@@ -1,0 +1,31 @@
+﻿<Window x:Class="Televisio_Harj02_Pv01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Televisio_Harj02_Pv01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="LblÄänenvoimakkuus" Content="Äänenvoimakkuuden säätö" HorizontalAlignment="Left" Height="33" Margin="23,294,0,0" VerticalAlignment="Top" Width="216" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="LblOtsikko" Content="Minun TV -ohjauspaneeli" HorizontalAlignment="Left" Height="64" Margin="158,28,0,0" VerticalAlignment="Top" Width="456" FontWeight="Bold" FontSize="36"/>
+        <Label x:Name="LblKirkkaudenSäätö" Content="Kirkkauden säätö" HorizontalAlignment="Left" Height="33" Margin="273,294,0,0" VerticalAlignment="Top" Width="149" FontWeight="Bold" FontSize="16"/>
+        <TextBox x:Name="TxtKirkkaus" HorizontalAlignment="Left" Height="35" Margin="283,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" FontSize="16"/>
+        <Button x:Name="BtnAsetaKirkkaus" Content="Aseta" HorizontalAlignment="Left" Height="35" Margin="362,324,0,0" VerticalAlignment="Top" Width="58" FontWeight="Bold" Click="BtnAsetaKirkkaus_Click"/>
+        <Button x:Name="BtnÄänestä" Content="Äänestä" HorizontalAlignment="Left" Height="55" Margin="538,304,0,0" VerticalAlignment="Top" Width="84" FontSize="16" FontWeight="Bold" Click="BtnÄänestä_Click" Background="#FF146CE2" Foreground="White"/>
+        <Button x:Name="BtnOnOff" Content="On/Off" HorizontalAlignment="Left" Height="46" Margin="67,150,0,0" VerticalAlignment="Top" Width="83" FontSize="16" FontWeight="Bold" Click="BtnOnOff_Click"/>
+        <Label x:Name="LblTelkkuOnOff" Content="" HorizontalAlignment="Left" Height="35" Margin="185,158,0,0" VerticalAlignment="Top" Width="121"/>
+        <Label x:Name="LblKanavaValinta" Content="Kanavavalitsin" HorizontalAlignment="Left" Height="33" Margin="477,113,0,0" VerticalAlignment="Top" Width="123" FontWeight="Bold" FontSize="16"/>
+        <TextBox x:Name="TxtKanava" HorizontalAlignment="Left" Height="35" Margin="486,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" FontSize="16"/>
+        <Button x:Name="BtnAsetaKanava" Content="Aseta" HorizontalAlignment="Left" Height="35" Margin="564,150,0,0" VerticalAlignment="Top" Width="58" FontWeight="Bold" Click="BtnAsetaKanava_Click"/>
+        <Label x:Name="LblKanavaNäyttö" Content="" HorizontalAlignment="Left" Height="35" Margin="635,150,0,0" VerticalAlignment="Top" Width="140" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="LblTelkkuInfo" Content="" HorizontalAlignment="Left" Height="55" Margin="67,211,0,0" VerticalAlignment="Top" Width="175"/>
+        <Label x:Name="LblVolyymi" Content="" HorizontalAlignment="Left" Height="35" Margin="171,324,0,0" VerticalAlignment="Top" Width="43" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label x:Name="LblKirkkaus1" Content="" HorizontalAlignment="Left" Height="35" Margin="427,324,0,0" VerticalAlignment="Top" Width="43" FontWeight="Bold" FontSize="16" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="BtnPoistu" Content="Poistu" HorizontalAlignment="Left" Height="55" Margin="671,304,0,0" VerticalAlignment="Top" Width="84" FontSize="16" FontWeight="Bold" Click="BtnPoistu_Click"/>
+        <Slider x:Name="SldVolyymi" HorizontalAlignment="Left" Height="22" Margin="30,377,0,0" VerticalAlignment="Top" Width="209" Maximum="100" TickFrequency="10" Foreground="#FF0D0D0D" TickPlacement="BottomRight" ValueChanged="SldVolyymi_ValueChanged"/>
+        <Slider x:Name="SldKirkkaus" HorizontalAlignment="Left" Height="22" Margin="283,377,0,0" VerticalAlignment="Top" Width="209" Maximum="100" TickFrequency="10" Foreground="#FF0D0D0D" TickPlacement="BottomRight" ValueChanged="SldKirkkaus_ValueChanged"/>
+        <Label x:Name="LblVaroitus" Content="" HorizontalAlignment="Left" Height="40" Margin="23,332,0,0" VerticalAlignment="Top" Width="100" Background="Red" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
